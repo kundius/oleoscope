@@ -7823,7 +7823,7 @@ mark,
       line-height: 32px;
       background-color: #fff;
       border-radius: 50%;
-      opacity: 0.3; }
+      opacity: 0.8; }
       .social li a:hover, .main-header_top_social li ul li a:hover {
         opacity: 1; }
   .social-vk {
@@ -7949,7 +7949,7 @@ mark,
       padding-right: 20px;
       padding-left: 20px; }
       .main-header_top_social li > a {
-        color: #d3d3d3 !important;
+        color: #9e9e9e !important;
         font-weight: bold;
         letter-spacing: 0.75px; }
       .main-header_top_social li ul {
