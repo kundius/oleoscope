@@ -9067,9 +9067,6 @@ h1, h2, h3, h4, h5, h6 {
     .page .main-page-content .flat-island > [class*="col-"], .single-interview .main-page-content .flat-island > [class*="col-"] {
       margin-bottom: 0; } }
 
-.single-interview .flat-island > div:last-of-type {
-  background-color: transparent; }
-
 .search-blocks article {
   margin: 30px; }
   .search-blocks article h2 {
