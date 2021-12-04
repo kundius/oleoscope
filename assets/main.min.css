@@ -7209,6 +7209,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .site-main .comment-navigation, .site-main .posts-navigation, .site-main .post-navigation {
   margin: 0 0 1.5em;
+  padding: 1.5em;
   overflow: hidden; }
 
 .comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous {
