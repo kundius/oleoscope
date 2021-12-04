@@ -28,7 +28,7 @@ get_header();
             </header><!-- .page-header -->
           </div>
         </div>
-        <div class="row no-gutters interview-blocks">
+        <div class="row no-gutters news-blocks">
         <?php
         /* Start the Loop */
         while ( have_posts() ) :
