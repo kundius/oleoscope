@@ -15,7 +15,7 @@
 
 	<header class="entry-header">
 		<?php
-		if ( in_array(get_post_type(), ['news', 'partners', 'analytics']) ) :
+		if ( in_array(get_post_type(), ['news', 'interview', 'partners', 'analytics']) ) :
 			?>
 			<div class="entry-meta">
 				<?php

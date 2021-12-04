@@ -7393,74 +7393,6 @@ embed, iframe, object {
 .gallery-caption {
   display: block; }
 
-article.interview {
-  margin: 25px; }
-  article.interview .post-thumbnail {
-    margin: 0 !important; }
-    article.interview .post-thumbnail img {
-      width: 100%;
-      height: auto; }
-  article.interview .entry-header, article.interview .entry-content, article.interview .entry-footer {
-    margin: 0; }
-  article.interview .entry-title {
-    font-family: "Exo 2", sans-serif;
-    font-size: 28px;
-    font-weight: 600;
-    text-align: left;
-    margin: 0 0 30px !important; }
-    @media (min-width: 768px) {
-      article.interview .entry-title {
-        font-size: 38px !important;
-        color: black; } }
-    article.interview .entry-title a {
-      color: #ffffff; }
-      article.interview .entry-title a:hover {
-        text-decoration: none; }
-    article.interview .entry-title .entry-content {
-      margin-bottom: 60px; }
-    article.interview .entry-title .entry-meta {
-      margin-bottom: 0; }
-  article.interview .byline {
-    display: none !important; }
-
-.subheader {
-  margin-bottom: -16px; }
-  .subheader article.interview {
-    margin: 0; }
-    .subheader article.interview .entry-title {
-      font-size: 26px; }
-      @media (min-width: 768px) {
-        .subheader article.interview .entry-title {
-          font-size: 55px; } }
-
-.interview-blocks article {
-  margin-bottom: 40px; }
-  .interview-blocks article header {
-    margin: 10px 0; }
-  .interview-blocks article footer {
-    margin: 10px 0; }
-    .interview-blocks article footer .cat-labels {
-      position: relative !important;
-      left: 0 !important; }
-  @media (min-width: 768px) {
-    .interview-blocks article .entry-title {
-      font-size: 38px !important;
-      margin-left: 0 !important; } }
-  .interview-blocks article .entry-title span {
-    background: none;
-    margin: 0 !important;
-    padding: 0 !important; }
-  .interview-blocks article .entry-title a {
-    color: #5c9314 !important; }
-  .interview-blocks article .byline {
-    display: none !important; }
-
-.single-interview .main-page-content {
-  padding-top: 0; }
-  @media (min-width: 768px) {
-    .single-interview .main-page-content .site-main {
-      padding: 0 100px 45px; } }
-
 .widget_currencyconverter_minimalistic .widget-title {
   display: none; }
 
@@ -8127,22 +8059,22 @@ mark,
   background-color: black;
   color: #ffffff; }
 
-.news-card, article.interview, .subheader article.interview, .interview-blocks article, .news-blocks article, .featured-blocks article, .single article, .page article {
+.news-card, .news-blocks article, .featured-blocks article, .single article, .page article {
   background-color: #ffffff; }
-  .news-card .post-thumbnail, article.interview .post-thumbnail, .interview-blocks article .post-thumbnail, .news-blocks article .post-thumbnail, .featured-blocks article .post-thumbnail, .single article .post-thumbnail, .page article .post-thumbnail {
+  .news-card .post-thumbnail, .news-blocks article .post-thumbnail, .featured-blocks article .post-thumbnail, .single article .post-thumbnail, .page article .post-thumbnail {
     display: block;
     position: relative;
     min-height: 80px;
     margin-bottom: 20px; }
-    .news-card .post-thumbnail img, article.interview .post-thumbnail img, .interview-blocks article .post-thumbnail img, .news-blocks article .post-thumbnail img, .featured-blocks article .post-thumbnail img, .single article .post-thumbnail img, .page article .post-thumbnail img, .news-card .post-thumbnail video, article.interview .post-thumbnail video, .interview-blocks article .post-thumbnail video, .news-blocks article .post-thumbnail video, .featured-blocks article .post-thumbnail video, .single article .post-thumbnail video, .page article .post-thumbnail video {
+    .news-card .post-thumbnail img, .news-blocks article .post-thumbnail img, .featured-blocks article .post-thumbnail img, .single article .post-thumbnail img, .page article .post-thumbnail img, .news-card .post-thumbnail video, .news-blocks article .post-thumbnail video, .featured-blocks article .post-thumbnail video, .single article .post-thumbnail video, .page article .post-thumbnail video {
       width: 100%;
       border-radius: 4px; }
-    .news-card .post-thumbnail .cat-labels, article.interview .post-thumbnail .cat-labels, .interview-blocks article .post-thumbnail .cat-labels, .news-blocks article .post-thumbnail .cat-labels, .featured-blocks article .post-thumbnail .cat-labels, .single article .post-thumbnail .cat-labels, .page article .post-thumbnail .cat-labels {
+    .news-card .post-thumbnail .cat-labels, .news-blocks article .post-thumbnail .cat-labels, .featured-blocks article .post-thumbnail .cat-labels, .single article .post-thumbnail .cat-labels, .page article .post-thumbnail .cat-labels {
       position: absolute;
       display: block;
       left: 20px;
       bottom: 10px; }
-      .news-card .post-thumbnail .cat-labels li, article.interview .post-thumbnail .cat-labels li, .interview-blocks article .post-thumbnail .cat-labels li, .news-blocks article .post-thumbnail .cat-labels li, .featured-blocks article .post-thumbnail .cat-labels li, .single article .post-thumbnail .cat-labels li, .page article .post-thumbnail .cat-labels li {
+      .news-card .post-thumbnail .cat-labels li, .news-blocks article .post-thumbnail .cat-labels li, .featured-blocks article .post-thumbnail .cat-labels li, .single article .post-thumbnail .cat-labels li, .page article .post-thumbnail .cat-labels li {
         display: inline-block;
         height: 34px;
         line-height: 34px;
@@ -8156,32 +8088,32 @@ mark,
         font-size: 13px;
         font-weight: bold;
         text-transform: uppercase; }
-        .news-card .post-thumbnail .cat-labels li:hover, article.interview .post-thumbnail .cat-labels li:hover, .interview-blocks article .post-thumbnail .cat-labels li:hover, .news-blocks article .post-thumbnail .cat-labels li:hover, .featured-blocks article .post-thumbnail .cat-labels li:hover, .single article .post-thumbnail .cat-labels li:hover, .page article .post-thumbnail .cat-labels li:hover {
+        .news-card .post-thumbnail .cat-labels li:hover, .news-blocks article .post-thumbnail .cat-labels li:hover, .featured-blocks article .post-thumbnail .cat-labels li:hover, .single article .post-thumbnail .cat-labels li:hover, .page article .post-thumbnail .cat-labels li:hover {
           text-decoration: none; }
-        .news-card .post-thumbnail .cat-labels li:first-child, article.interview .post-thumbnail .cat-labels li:first-child, .interview-blocks article .post-thumbnail .cat-labels li:first-child, .news-blocks article .post-thumbnail .cat-labels li:first-child, .featured-blocks article .post-thumbnail .cat-labels li:first-child, .single article .post-thumbnail .cat-labels li:first-child, .page article .post-thumbnail .cat-labels li:first-child {
+        .news-card .post-thumbnail .cat-labels li:first-child, .news-blocks article .post-thumbnail .cat-labels li:first-child, .featured-blocks article .post-thumbnail .cat-labels li:first-child, .single article .post-thumbnail .cat-labels li:first-child, .page article .post-thumbnail .cat-labels li:first-child {
           background-color: #fcc201;
           color: #333333; }
-          .news-card .post-thumbnail .cat-labels li:first-child a, article.interview .post-thumbnail .cat-labels li:first-child a, .interview-blocks article .post-thumbnail .cat-labels li:first-child a, .news-blocks article .post-thumbnail .cat-labels li:first-child a, .featured-blocks article .post-thumbnail .cat-labels li:first-child a, .single article .post-thumbnail .cat-labels li:first-child a, .page article .post-thumbnail .cat-labels li:first-child a {
+          .news-card .post-thumbnail .cat-labels li:first-child a, .news-blocks article .post-thumbnail .cat-labels li:first-child a, .featured-blocks article .post-thumbnail .cat-labels li:first-child a, .single article .post-thumbnail .cat-labels li:first-child a, .page article .post-thumbnail .cat-labels li:first-child a {
             color: inherit;
             text-decoration: none; }
-  .news-card .entry-header, article.interview .entry-header, .interview-blocks article .entry-header, .news-blocks article .entry-header, .featured-blocks article .entry-header, .single article .entry-header, .page article .entry-header, .news-card .post-thumbnail, article.interview .post-thumbnail, .interview-blocks article .post-thumbnail, .news-blocks article .post-thumbnail, .featured-blocks article .post-thumbnail, .single article .post-thumbnail, .page article .post-thumbnail, .news-card .entry-content, article.interview .entry-content, .interview-blocks article .entry-content, .news-blocks article .entry-content, .featured-blocks article .entry-content, .single article .entry-content, .page article .entry-content, .news-card .entry-footer, article.interview .entry-footer, .interview-blocks article .entry-footer, .news-blocks article .entry-footer, .featured-blocks article .entry-footer, .single article .entry-footer, .page article .entry-footer {
+  .news-card .entry-header, .news-blocks article .entry-header, .featured-blocks article .entry-header, .single article .entry-header, .page article .entry-header, .news-card .post-thumbnail, .news-blocks article .post-thumbnail, .featured-blocks article .post-thumbnail, .single article .post-thumbnail, .page article .post-thumbnail, .news-card .entry-content, .news-blocks article .entry-content, .featured-blocks article .entry-content, .single article .entry-content, .page article .entry-content, .news-card .entry-footer, .news-blocks article .entry-footer, .featured-blocks article .entry-footer, .single article .entry-footer, .page article .entry-footer {
     margin-right: 30px;
     margin-left: 30px; }
-  .news-card .entry-meta, article.interview .entry-meta, .interview-blocks article .entry-meta, .news-blocks article .entry-meta, .featured-blocks article .entry-meta, .single article .entry-meta, .page article .entry-meta {
+  .news-card .entry-meta, .news-blocks article .entry-meta, .featured-blocks article .entry-meta, .single article .entry-meta, .page article .entry-meta {
     margin-bottom: 16px; }
-    .news-card .entry-meta a, article.interview .entry-meta a, .interview-blocks article .entry-meta a, .news-blocks article .entry-meta a, .featured-blocks article .entry-meta a, .single article .entry-meta a, .page article .entry-meta a {
+    .news-card .entry-meta a, .news-blocks article .entry-meta a, .featured-blocks article .entry-meta a, .single article .entry-meta a, .page article .entry-meta a {
       font-size: 15px;
       font-weight: bold;
       letter-spacing: 0.75px;
       text-align: left;
       color: #d3d3d3; }
-    .news-card .entry-meta .posted-on, article.interview .entry-meta .posted-on, .interview-blocks article .entry-meta .posted-on, .news-blocks article .entry-meta .posted-on, .featured-blocks article .entry-meta .posted-on, .single article .entry-meta .posted-on, .page article .entry-meta .posted-on {
+    .news-card .entry-meta .posted-on, .news-blocks article .entry-meta .posted-on, .featured-blocks article .entry-meta .posted-on, .single article .entry-meta .posted-on, .page article .entry-meta .posted-on {
       display: block; }
-    .news-card .entry-meta .byline, article.interview .entry-meta .byline, .interview-blocks article .entry-meta .byline, .news-blocks article .entry-meta .byline, .featured-blocks article .entry-meta .byline, .single article .entry-meta .byline, .page article .entry-meta .byline {
+    .news-card .entry-meta .byline, .news-blocks article .entry-meta .byline, .featured-blocks article .entry-meta .byline, .single article .entry-meta .byline, .page article .entry-meta .byline {
       display: none; }
-    .news-card .entry-meta .author a, article.interview .entry-meta .author a, .interview-blocks article .entry-meta .author a, .news-blocks article .entry-meta .author a, .featured-blocks article .entry-meta .author a, .single article .entry-meta .author a, .page article .entry-meta .author a {
+    .news-card .entry-meta .author a, .news-blocks article .entry-meta .author a, .featured-blocks article .entry-meta .author a, .single article .entry-meta .author a, .page article .entry-meta .author a {
       color: #9e9e9e; }
-  .news-card .entry-title, article.interview .entry-title, .interview-blocks article .entry-title, .news-blocks article .entry-title, .featured-blocks article .entry-title, .single article .entry-title, .page article .entry-title {
+  .news-card .entry-title, .news-blocks article .entry-title, .featured-blocks article .entry-title, .single article .entry-title, .page article .entry-title {
     margin-bottom: 24px;
     font-family: "Exo 2", sans-serif;
     font-size: 21px;
@@ -8191,15 +8123,15 @@ mark,
     line-height: 1.25;
     letter-spacing: normal;
     text-align: left; }
-    .news-card .entry-title a, article.interview .entry-title a, .interview-blocks article .entry-title a, .news-blocks article .entry-title a, .featured-blocks article .entry-title a, .single article .entry-title a, .page article .entry-title a {
+    .news-card .entry-title a, .news-blocks article .entry-title a, .featured-blocks article .entry-title a, .single article .entry-title a, .page article .entry-title a {
       color: #333333; }
-  .news-card .entry-content, article.interview .entry-content, .interview-blocks article .entry-content, .news-blocks article .entry-content, .featured-blocks article .entry-content, .single article .entry-content, .page article .entry-content {
+  .news-card .entry-content, .news-blocks article .entry-content, .featured-blocks article .entry-content, .single article .entry-content, .page article .entry-content {
     font-size: 1rem;
     line-height: 1.25;
     letter-spacing: 0.75px;
     text-align: left;
     color: #9e9e9e; }
-    .news-card .entry-content .more-link, article.interview .entry-content .more-link, .interview-blocks article .entry-content .more-link, .news-blocks article .entry-content .more-link, .featured-blocks article .entry-content .more-link, .single article .entry-content .more-link, .page article .entry-content .more-link {
+    .news-card .entry-content .more-link, .news-blocks article .entry-content .more-link, .featured-blocks article .entry-content .more-link, .single article .entry-content .more-link, .page article .entry-content .more-link {
       margin-top: 10px;
       font-size: 13px;
       font-weight: bold;
