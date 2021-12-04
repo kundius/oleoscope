@@ -48,7 +48,7 @@ get_header();
         <?php
         endwhile;
         ?>
-        <?php echo do_shortcode('[ajax_load_more css_classes="myclass" sroll="false" post_type="' . get_post_type() . '" posts_per_page="8" transition_container_classes="row news-blocks" offset="' . get_option( 'posts_per_page' ) . '"]'); ?>
+        <?php // echo do_shortcode('[ajax_load_more css_classes="myclass" post_type="' . get_post_type() . '" posts_per_page="8" transition_container_classes="row news-blocks" offset="' . get_option( 'posts_per_page' ) . '"]'); ?>
         </div>
         <?php
         the_posts_navigation();
