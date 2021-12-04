@@ -8149,8 +8149,8 @@ mark,
         margin-bottom: 10px;
         padding: 0 1rem;
         border-radius: 4px;
-        background-color: rgba(255, 255, 255, 0.5);
-        color: rgba(255, 255, 255, 0.7);
+        background-color: #fcc201;
+        color: #000000;
         font-family: "PT Sans", sans-serif;
         font-size: 13px;
         font-weight: bold;
@@ -8616,7 +8616,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.17;
   letter-spacing: 0.6px; }
   .popular-blocks .posted-on a {
-    color: #d3d3d3; }
+    color: #9e9e9e; }
 
 .home .news-blocks > .col,
 .home .news-blocks > [class*="col-"] {
