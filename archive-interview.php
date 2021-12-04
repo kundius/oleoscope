@@ -65,7 +65,8 @@ get_header();
   </div>
     <div class="col-md-3">
       <aside id="primary" class="widget-area">
-        <section id="interview-categories" class="widget widget_categories">
+        <!-- TODO: удалить если не понадобится -->
+        <section id="interview-categories" class="widget widget_categories" style="display: none">
 <!--           <h2 class="widget-title"><?= __('Key areas', 'oleoscope') ?></h2> -->
 	        <?php
 	        // list all categories of posts
