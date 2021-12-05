@@ -86,8 +86,36 @@ get_header();
 	  <?php
 	  // set post type
 	  $args = array(
+		  'post_type' => array('events'),
+		  'posts_per_page' => 1,
+      'orderby' => 'rand',
+	  );
+	  $query = new WP_Query( $args );
+
+
+	  while ( $query->have_posts() ) :
+		  $query->the_post();
+
+		  ?>
+        <div class="">
+		    <?php
+		    get_template_part( 'template-parts/content', 'featured' );
+		    ?>
+        </div>
+		  <?php
+
+		  // If comments are open or we have at least one comment, load up the comment template.
+		  if ( comments_open() || get_comments_number() ) :
+			  comments_template();
+		  endif;
+
+	  endwhile; // End of the loop.
+	  ?>
+	  <?php
+	  // set post type
+	  $args = array(
 		  'post_type'=>array('analytics'),
-		  'posts_per_page'   => 2,
+		  'posts_per_page'   => 1,
 		  'meta_key'         => 'featured',
 		  'meta_value'       => true,
 	  );

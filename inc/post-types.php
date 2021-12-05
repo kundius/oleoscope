@@ -126,7 +126,7 @@ function oleoscope_register_cpts() {
 		'menu_name' => 'Мероприятия' // ссылка в меню в админке
 	);
 	$args['labels'] = $labels5;
-	$args['menu_icon'] = 'dashicons-groups';
+	$args['menu_icon'] = 'dashicons-text-page';
 	$args['menu_position'] += 1;
 	register_post_type('events', $args);
 }
