@@ -473,12 +473,13 @@ add_filter('nav_menu_css_class', 'current_type_nav_class', 10, 2);
 function current_type_nav_class($classes, $item) {
     // Get post_type for this post
     $post_type = get_query_var('post_type');
-		print_r($post_type, $item);
 
     // Go to Menus and add a menu class named: {custom-post-type}-menu-item
     // This adds a 'current_page_parent' class to the parent menu item
     if (in_array($post_type . '-menu-item', $classes))
         array_push($classes, 'current_page_parent');
+
+		array_push($classes, 'qqqqqqqqq');
 
     return $classes;
 }
