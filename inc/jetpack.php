@@ -44,6 +44,7 @@ function oleoscope_jetpack_setup() {
 			'interview'       => true,
 			'analytics'       => true,
 			'partners'       => true,
+			'events'       => true,
 		),
 	) );
 }

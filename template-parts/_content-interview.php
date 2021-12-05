@@ -16,7 +16,7 @@
 	<?php endif; ?>
 	<header class="entry-header">
 		<?php
-		if ( is_singular() && in_array(get_post_type(), ['news', 'partners', 'analytics', 'interview']) ) :
+		if ( is_singular() && in_array(get_post_type(), ['news', 'partners', 'events', 'analytics', 'interview']) ) :
 			?>
 	
 			<div class="entry-meta">

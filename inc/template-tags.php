@@ -59,7 +59,7 @@ if ( ! function_exists( 'oleoscope_entry_footer' ) ) :
 	 */
 	function oleoscope_entry_footer() {
 		// Hide category and tag text for pages.
-    $post_types = array('post', 'news', 'interview', 'analytics', 'partners');
+    $post_types = array('post', 'news', 'interview', 'analytics', 'partners', 'events');
 		if ( in_array(get_post_type(), $post_types) ) {
 			/* translators: used between list items, there is a space after the comma */
 //			$categories_list = get_the_category_list( esc_html__( ' ', 'oleoscope' ) ); // removed ', '

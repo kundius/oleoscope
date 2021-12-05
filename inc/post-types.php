@@ -109,6 +109,26 @@ function oleoscope_register_cpts() {
 	$args['menu_icon'] = 'dashicons-building';
 	$args['menu_position'] += 1;
 	register_post_type('companies', $args);
+
+	// Events' news
+	$labels5 = array(
+		'name' => 'Мероприятия',
+		'singular_name' => 'Мероприятие', // Добавить->Запись (Именительный падеж)
+		'add_new' => 'Добавить мероприятие', // в меню и на кнопке
+		'add_new_item' => 'Добавить мероприятие', // заголовок
+		'edit_item' => 'Редактировать мероприятие',
+		'new_item' => 'Новое мероприятие',
+		'all_items' => 'Все мероприятия', // подменю в админке
+		'view_item' => 'Просмотреть мероприятие',
+		'search_items' => 'Поиск мероприятий',
+		'not_found' =>  'Мероприятий не найдено.',
+		'not_found_in_trash' => 'Мероприятий в корзине не найдено.',
+		'menu_name' => 'Мероприятия' // ссылка в меню в админке
+	);
+	$args['labels'] = $labels5;
+	$args['menu_icon'] = 'dashicons-groups';
+	$args['menu_position'] += 1;
+	register_post_type('events', $args);
 }
 add_action( 'init', 'oleoscope_register_cpts' );
 
