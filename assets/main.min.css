@@ -9505,6 +9505,10 @@ textarea.form-control {
   .page-template-page-prices.page .site-main {
     padding: 15px 15px 0; } }
 
+@media (min-width: 768px) {
+  .page-template-page-products.page .site-main {
+    padding: 15px 15px 0; } }
+
 .price-table {
   width: 100% !important;
   display: block; }
@@ -9788,4 +9792,18 @@ textarea.form-control {
   @media (min-width: 768px) {
     .price-table-big td {
       padding: 10px 5px; } }
+
+.page-products label {
+  color: #717171; }
+
+.page-products article .entry-content,
+.page-products .chart-content {
+  color: #717171;
+  font-size: 1rem;
+  line-height: 1.25;
+  letter-spacing: 0.75px; }
+
+@media (min-width: 768px) {
+  .page-template-page-products.page .site-main {
+    padding: 15px 15px 0; } }
 
