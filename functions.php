@@ -480,6 +480,8 @@ function current_type_nav_class($classes, $item) {
         array_push($classes, 'current_page_parent');
 
 		array_push($classes, $post_type);
+		array_push($classes, $item->type);
+		array_push($classes, $item->url);
 
     return $classes;
 }
