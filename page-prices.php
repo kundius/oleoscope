@@ -59,6 +59,8 @@ get_header();
 					<?php dynamic_sidebar( 'sidebar-page' ); ?>
 					<?php } elseif ( get_the_ID() == 14 || wp_get_post_parent_id( get_the_ID() ) == 14 ) { ?>
 					<?php dynamic_sidebar( 'sidebar-prices' ); ?>
+					<?php } elseif ( get_the_ID() == 25674 || wp_get_post_parent_id( get_the_ID() ) == 25674 ) { ?>
+					<?php dynamic_sidebar( 'sidebar-products' ); ?>
 					<?php } ?>
 				</aside>
 			</div>
