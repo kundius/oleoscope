@@ -16,32 +16,13 @@ get_header();
 						
 						<?php
 						while ( have_posts() ) {
-							
 							the_post();
 						
-							if ( true ) { 							
-								get_template_part( 'template-parts/content', 'page' );						
-							} else { ?>
-								<article>
-									<header class="entry-header">
-										<?php the_title( '
-										<h1 class="entry-title">', '</h1>' ); ?>
-									</header>
-									<!-- .entry-header -->
-									<div class="alert alert-warning" role="alert">
-										<?php
-										printf('<p class="lead"><strong>%s</strong></p>', esc_html__( 'This section is visible only for our subscribers.', 'oleoscope' ));
-										printf('<p><a href="%s">%s.</a></p>', home_url('/about/subscription/'), esc_html__( 'Read more', 'oleoscope' ));
-										?>							
-									</div>
-								</article>
-							<?php
-							}
+              get_template_part( 'template-parts/content', 'products' );
 							
 							if ( comments_open() || get_comments_number() ) {
 								comments_template();
 							}
-
 						}
 						
 						if ( function_exists('the_ad_placement') ) { 
