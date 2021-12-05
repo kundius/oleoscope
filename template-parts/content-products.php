@@ -24,16 +24,16 @@ $query_child = new WP_Query( $args );
 
 	<div class="entry-content">
     <div class="products-list">
-	  <?php while ($query_child->have_posts()): $query_child->the_post(); ?>
-		  <div class="products-item">
-      <?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'post-thumbnail', array(
-				'alt' => the_title_attribute( array(
-					'echo' => false,
-				) ),
-			) ); }?>
-        <div class="products-item__name"><?php the_title(); ?></div>
-      </div>
-    <?php endwhile; ?>
+	    <?php while ($query_child->have_posts()): $query_child->the_post(); ?>
+		  <a href="<?php the_permalink() ?>" class="products-item">
+        <?php if (has_post_thumbnail()): ?>
+          <span class="products-item__image">
+            <?php the_post_thumbnail( 'post-thumbnail', array('alt' => the_title_attribute(array( 'echo' => false )))); ?>
+          </span>
+        <?php endif; ?>
+        <span class="products-item__name"><?php the_title(); ?></span>
+      </a>
+      <?php endwhile; ?>
     </div>
     
 		<?php

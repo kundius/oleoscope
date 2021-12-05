@@ -9807,3 +9807,25 @@ textarea.form-control {
   .page-template-page-products.page .site-main {
     padding: 15px 15px 0; } }
 
+.products-item {
+  display: flex;
+  text-decoration: none;
+  margin-bottom: 1em;
+  padding-bottom: 10px;
+  padding-left: 0;
+  border-bottom: 2px solid #eeeeee; }
+
+.products-item__image {
+  width: 90px;
+  height: 90px;
+  flex-shrink: 0;
+  margin-right: 20px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4); }
+
+.products-item__name {
+  color: #626363;
+  font-size: 16px;
+  letter-spacing: 0.75px;
+  line-height: 1.25; }
+
