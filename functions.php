@@ -479,7 +479,7 @@ function current_type_nav_class($classes, $item) {
     if (in_array($post_type . '-menu-item', $classes))
         array_push($classes, 'current_page_parent');
 
-		array_push($classes, 'qqqqqqqqq');
+		array_push($classes, $post_type);
 
     return $classes;
 }
