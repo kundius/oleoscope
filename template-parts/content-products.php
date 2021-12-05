@@ -23,11 +23,18 @@ $query_child = new WP_Query( $args );
 	<?php oleoscope_post_thumbnail(); ?>
 
 	<div class="entry-content">
-    <ul>
+    <div class="products-list">
 	  <?php while ($query_child->have_posts()): $query_child->the_post(); ?>
-		  <li><?php the_title(); ?></li>
+		  <div class="products-item">
+      <?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'post-thumbnail', array(
+				'alt' => the_title_attribute( array(
+					'echo' => false,
+				) ),
+			) ); }?>
+        <div class="products-item__name"><?php the_title(); ?></div>
+      </div>
     <?php endwhile; ?>
-    </ul>
+    </div>
     
 		<?php
 		the_content();
