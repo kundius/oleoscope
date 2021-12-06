@@ -121,7 +121,7 @@ get_header();
 							'key'   => '_wp_page_template', 
 							'value' => 'page-product.php'
 					)
-			)
+			),
       'orderby' => 'rand',
 	  );
 	  $query = new WP_Query( $args );
