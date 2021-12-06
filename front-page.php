@@ -118,6 +118,7 @@ get_header();
 		  'posts_per_page'   => 1,
 		  'meta_key'         => '_wp_page_template',
 		  'meta_value'       => 'page-product.php',
+      'orderby' => 'rand',
 	  );
 	  $query = new WP_Query( $args );
 
