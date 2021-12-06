@@ -9822,6 +9822,7 @@ textarea.form-control {
   margin-right: 20px;
   border-radius: 50%;
   overflow: hidden;
+  position: relative;
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25); }
   .products-item__image img {
     position: absolute;
