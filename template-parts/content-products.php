@@ -24,7 +24,7 @@ $query_child = new WP_Query( $args );
     <div class="products-list">
 	    <?php while ($query_child->have_posts()): $query_child->the_post(); ?>
 		  <a href="<?php the_permalink() ?>" class="products-item">
-        <?php if ($icon = get_field('icon')): ?>
+        <?php if ($icon = get_field('thumbnail_in_list')): ?>
           <span class="products-item__image">
 						<img src="<?php echo $icon['sizes']['thumbnail'] ?>" alt="<?php the_title_attribute() ?>">
           </span>
