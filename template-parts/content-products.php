@@ -31,7 +31,7 @@ $query_child = new WP_Query( $args );
         <?php endif; ?>
         <span class="products-item__name"><?php the_title(); ?></span>
       </a>
-      <?php endwhile; ?>
+      <?php endwhile; wp_reset_query(); ?>
     </div>
     
 		<?php
