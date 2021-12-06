@@ -20,8 +20,6 @@ $query_child = new WP_Query( $args );
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php oleoscope_post_thumbnail(); ?>
-
 	<div class="entry-content">
     <div class="products-list">
 	    <?php while ($query_child->have_posts()): $query_child->the_post(); ?>
