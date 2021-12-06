@@ -390,6 +390,7 @@ mark, .mark
       position: relative
       display: inline-block
       margin-right: 1rem
+      &.current-page-ancestor,
       &.current-menu-item
       	a
       	 color: $primary-color
@@ -1385,7 +1386,7 @@ h1, h2, h3, h4, h5, h6
         @include media-breakpoint-down(sm)
           color: $green
           padding: 25px
-      li:hover, li.current-menu-item
+      li:hover, li.current-menu-item, li.current-page-ancestor
         a
           background-image: linear-gradient(to left, #fafafa, #ffffff)
           border-right: 3px solid $green

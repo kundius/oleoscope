@@ -8012,7 +8012,7 @@ mark,
     position: relative;
     display: inline-block;
     margin-right: 1rem; }
-    .main-nav > ul > li.current-menu-item a {
+    .main-nav > ul > li.current-page-ancestor a, .main-nav > ul > li.current-menu-item a {
       color: #5c9314; }
     .main-nav > ul > li:hover ul {
       display: block; }
@@ -8985,7 +8985,7 @@ h1, h2, h3, h4, h5, h6 {
         .widget-area .widget_nav_menu .menu a {
           color: #5c9314;
           padding: 25px; } }
-    .widget-area .widget_nav_menu .menu li:hover a, .widget-area .widget_nav_menu .menu li.current-menu-item a {
+    .widget-area .widget_nav_menu .menu li:hover a, .widget-area .widget_nav_menu .menu li.current-menu-item a, .widget-area .widget_nav_menu .menu li.current-page-ancestor a {
       background-image: linear-gradient(to left, #fafafa, #ffffff);
       border-right: 3px solid #5c9314;
       color: #5c9314;
