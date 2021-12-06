@@ -114,10 +114,10 @@ get_header();
 	  <?php
 	  // set post type
 	  $args = array(
-		  'post_type'=>array('analytics'),
+		  'post_type'=>array('page'),
 		  'posts_per_page'   => 1,
-		  'meta_key'         => 'featured',
-		  'meta_value'       => true,
+		  'meta_key'         => '_wp_page_template',
+		  'meta_value'       => 'page-product.php',
 	  );
 	  $query = new WP_Query( $args );
 
