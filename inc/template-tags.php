@@ -223,6 +223,8 @@ if ( ! function_exists( 'oleoscope_featured_thumbnail' ) ) :
 	 */
 	function oleoscope_featured_thumbnail() {
 		$image = null;
+		print_r(get_the_post_thumbnail_url('large'));
+		print_r(get_the_post_thumbnail_url());
 		if (has_post_thumbnail()) {
 			$image = (get_post_type() == 'news') ? get_the_post_thumbnail_url('large') : get_the_post_thumbnail_url();
 		} else {
