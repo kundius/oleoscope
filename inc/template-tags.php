@@ -222,7 +222,14 @@ if ( ! function_exists( 'oleoscope_featured_thumbnail' ) ) :
 	 * element when on single views.
 	 */
 	function oleoscope_featured_thumbnail() {
-		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
+		$image = null;
+		if (has_post_thumbnail()) {
+			$image = (get_post_type() == 'news') ? the_post_thumbnail_url('large') : the_post_thumbnail_url();
+		} else {
+			$thumbnail_in_list = get_field('thumbnail_in_list');
+			$image = $thumbnail_in_list['sizes']['thumbnail'];
+		}
+		if ( post_password_required() || is_attachment() || ! $image ) {
 			return;
 		}
     ?>
@@ -234,7 +241,7 @@ if ( ! function_exists( 'oleoscope_featured_thumbnail' ) ) :
 
 
 
-    <div class="post-thumbnail singular" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 80%, rgba(0,0,0,0) 100%), url(<?php (get_post_type() == 'news') ? the_post_thumbnail_url('large') : the_post_thumbnail_url() ?>);">
+    <div class="post-thumbnail singular" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 80%, rgba(0,0,0,0) 100%), url(<?php $image ?>);">
 				<?php // the_post_thumbnail(''); ?>
         <footer>
           <ul class="cat-labels">
