@@ -9,7 +9,9 @@
 
 $args = array(
   'post_type' => array('page'),
-  'post_parent' => get_the_ID()
+  'post_parent' => get_the_ID(),
+	'orderby'   => 'menu_order',
+	'order' => 'DESC',
 );
 $query_child = new WP_Query( $args );
 
