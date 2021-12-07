@@ -241,7 +241,7 @@ if ( ! function_exists( 'oleoscope_featured_thumbnail' ) ) :
 
 
 
-    <div class="post-thumbnail singular" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 80%, rgba(0,0,0,0) 100%), url(<?php $image ?>);">
+    <div class="post-thumbnail singular" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 80%, rgba(0,0,0,0) 100%), url(<?php echo $image ?>);">
 				<?php // the_post_thumbnail(''); ?>
         <footer>
           <ul class="cat-labels">
