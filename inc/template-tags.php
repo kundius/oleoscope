@@ -224,7 +224,7 @@ if ( ! function_exists( 'oleoscope_featured_thumbnail' ) ) :
 	function oleoscope_featured_thumbnail() {
 		$image = null;
 		if (has_post_thumbnail()) {
-			$image = (get_post_type() == 'news') ? the_post_thumbnail_url('large') : the_post_thumbnail_url();
+			$image = (get_post_type() == 'news') ? get_the_post_thumbnail_url('large') : get_the_post_thumbnail_url();
 		} else {
 			$thumbnail_in_list = get_field('thumbnail_in_list');
 			$image = $thumbnail_in_list['sizes']['thumbnail'];
