@@ -19,6 +19,7 @@
 		if ( is_singular() && in_array(get_post_type(), ['news', 'page', 'partners', 'events', 'analytics', 'interview']) ) :
 			?>
 			<div class="entry-meta">
+				111
 				<?php
 				if ($event_date = get_field('event_date')) {
 					echo $event_date;
