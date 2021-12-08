@@ -262,18 +262,16 @@ if ( ! function_exists( 'oleoscope_featured_thumbnail' ) ) :
           <div class="entry-meta">
 	          <?php
 						if ($event_date = get_field('event_date')) {
-							echo wp_date('d.m.Y', strtotime($event_date));                          // 15 Ноя 1999 05:00:00 (учитывается временная зона +5 часов)
-
-							// $time_string = '<time class="entry-date" datetime="%1$s">%2$s</time>';
-							// $time_string = sprintf( $time_string,
-							// 	esc_attr( get_the_date( DATE_W3C ) ),
-							// 	esc_html( get_the_date() )
-							// );
-							// $posted_on = sprintf(
-							// 	esc_html_x( '%s', 'post date', 'oleoscope' ),
-							// 	'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
-							// );
-							// echo '<span class="posted-on">' . $posted_on . '</span>';
+							$time_string = '<time class="entry-date" datetime="%1$s">%2$s</time>';
+							$time_string = sprintf( $time_string,
+								esc_attr( wp_date(DATE_W3C, strtotime($event_date)) ),
+								esc_html( wp_date('d.m.Y', strtotime($event_date)) )
+							);
+							$posted_on = sprintf(
+								esc_html_x( '%s', 'post date', 'oleoscope' ),
+								'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+							);
+							echo '<span class="posted-on">' . $posted_on . '</span>';
 						} else {
 							oleoscope_posted_on();
 						}
