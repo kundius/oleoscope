@@ -260,7 +260,23 @@ if ( ! function_exists( 'oleoscope_featured_thumbnail' ) ) :
           the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
           ?>
           <div class="entry-meta">
-	          <?php oleoscope_posted_on(); ?>
+	          <?php
+						if ($event_date = get_field('event_date')) {
+							echo $event_date;
+							// $time_string = '<time class="entry-date" datetime="%1$s">%2$s</time>';
+							// $time_string = sprintf( $time_string,
+							// 	esc_attr( get_the_date( DATE_W3C ) ),
+							// 	esc_html( get_the_date() )
+							// );
+							// $posted_on = sprintf(
+							// 	esc_html_x( '%s', 'post date', 'oleoscope' ),
+							// 	'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+							// );
+							// echo '<span class="posted-on">' . $posted_on . '</span>';
+						} else {
+							oleoscope_posted_on();
+						}
+						?>
           </div><!-- .entry-meta -->
         </footer>
       </div><!-- .post-thumbnail -->
