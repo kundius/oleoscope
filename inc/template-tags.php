@@ -262,7 +262,8 @@ if ( ! function_exists( 'oleoscope_featured_thumbnail' ) ) :
           <div class="entry-meta">
 	          <?php
 						if ($event_date = get_field('event_date')) {
-							echo $event_date;
+							echo wp_date('d.m.Y', strtotime($event_date));                          // 15 Ноя 1999 05:00:00 (учитывается временная зона +5 часов)
+
 							// $time_string = '<time class="entry-date" datetime="%1$s">%2$s</time>';
 							// $time_string = sprintf( $time_string,
 							// 	esc_attr( get_the_date( DATE_W3C ) ),
