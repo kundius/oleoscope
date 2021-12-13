@@ -86,9 +86,15 @@ get_header();
 	  <?php
 	  // set post type
 	  $args = array(
-		  'post_type' => array('events'),
-		  'posts_per_page' => 1,
-      // 'orderby' => 'rand',
+		  'post_type'=>array('page'),
+		  'posts_per_page'   => 1,
+			'meta_query' => array( 
+					array(
+							'key'   => '_wp_page_template', 
+							'value' => 'page-product.php'
+					)
+			),
+      'orderby' => 'rand',
 	  );
 	  $query = new WP_Query( $args );
 
@@ -114,15 +120,9 @@ get_header();
 	  <?php
 	  // set post type
 	  $args = array(
-		  'post_type'=>array('page'),
-		  'posts_per_page'   => 1,
-			'meta_query' => array( 
-					array(
-							'key'   => '_wp_page_template', 
-							'value' => 'page-product.php'
-					)
-			),
-      'orderby' => 'rand',
+		  'post_type' => array('events'),
+		  'posts_per_page' => 1,
+      // 'orderby' => 'rand',
 	  );
 	  $query = new WP_Query( $args );
 
