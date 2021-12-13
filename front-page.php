@@ -88,7 +88,7 @@ get_header();
 	  $args = array(
 		  'post_type' => array('events'),
 		  'posts_per_page' => 1,
-      'orderby' => 'rand',
+      // 'orderby' => 'rand',
 	  );
 	  $query = new WP_Query( $args );
 
